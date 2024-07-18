@@ -1,8 +1,12 @@
 package orbitor.lunargate.dto;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class AlbumDto {
     private String title;
 

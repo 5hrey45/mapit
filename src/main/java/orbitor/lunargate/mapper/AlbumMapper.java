@@ -4,9 +4,12 @@ import orbitor.lunargate.dto.AlbumDto;
 import orbitor.lunargate.entity.Album;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.factory.Mappers;
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface AlbumMapper {
+
+    AlbumMapper INSTANCE = Mappers.getMapper(AlbumMapper.class);
 
     AlbumDto albumToAlbumDto(Album album);
 
