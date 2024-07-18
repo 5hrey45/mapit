@@ -22,5 +22,9 @@ public class Main {
 
         System.out.println("mapped adele album to album dto");
         System.out.println(adeleAlbumDto);
+
+        AlbumMapper.INSTANCE.updateAlbumFromAlbumDto(adeleAlbumDto, jacksonAlbum);
+        System.out.println("updated adele data from adele dto to jackson album");
+        System.out.println(jacksonAlbum);
     }
 }
